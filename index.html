@@ -1,11 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title></title>
+     <!-- Font  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+     
+       <!-- Daisy UI  -->
+       <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+       <script src="https://cdn.tailwindcss.com"></script>
+
+       <!-- Awesome font -->
+       <script src="https://kit.fontawesome.com/26a890253d.js" crossorigin="anonymous"></script>
+
+           <!-- Tailwind Css -->
+           <script src="https://cdn.tailwindcss.com"></script>
+           
+           <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                    'nav-btn': '#ABEF5F',
+                    'nav-bga': '#1C1C1C',
+                    'nav-bga-white': '##E9E9E9',
+                  
+
+                  }
+                }
+              }
+            }
+          </script> 
+
+        <style>
+            .font-manrope {
+                font-family: 'Manrope', sans-serif;
+            }
+        </style>   
+    <title>Rinterio</title>
 </head>
-<body>
+<body class="font-manrope">
+  <nav class="container mx-auto ">
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+     
+        <a class="btn btn-ghost text-xl"><i class="fa-solid fa-arrow-right rounded-full p-1  bg-nav-btn -rotate-45  text-white "></i> Rinterio</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a class="text-gray-">Home </a></li>
+          <li><a class="text-gray-500">Services </a></li>
+          <li><a class="text-gray-500">Portfolio </a></li>
+          <li><a class="text-gray-500">Blogs </a></li>
+          <li><a class="text-gray-500">Contact Us </a></li>
+
+        </ul>
+      </div>
+      
+      <div class="navbar-end rounded-xl ">
+        <i class="fa-solid fa-cart-shopping bg-nav-bga-white p-4 gap-4"></i>
+        <i class="fa-solid fa-magnifying-glass bg-nav-bga-white p-4 gap-4"></i>
+        <a class="btn bg-nav-btn text-black font-bold">Book Consult<i class="fa-solid fa-arrow-right rounded-full p-2  bg-nav-bga -rotate-45  text-white "></i></a>
+
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          </ul>
+        </div>
+      </div>
+  
+
+    </div>
+  </nav>
     
 </body>
 </html>
